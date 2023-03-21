@@ -1,0 +1,9 @@
+w=["WAIT\n"]
+b=["BLOCK\n"]
+v=w*5+b
+x=b+w*13
+y=w*11
+z=x+w
+d={4:b+y,5:v+w*9,3:x,9:w*13+b+w*16+z*2,26:b+w*21+b+w*20+x+b+y,23:w*4+b+v*7+w*5,20:w*8+x+b+v+y+x}
+a=sum(map(int,input().split()[::4]))
+print(*d[a])
